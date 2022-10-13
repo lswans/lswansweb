@@ -1,42 +1,17 @@
 h1, h2, h3{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 3400;
     color: white;
 }
 
 body{
     color: white;
-    background-color: rgb(32, 153, 180);
+    background-color: forestgreen;
 }
 
 h1{
-    font-size: 2em;
-}
-
-section.intro{
-    padding-left: 5rem;
-}
-
-section.about_us{
-    padding-left: 10rem;
-
-}
-
-table{
-    border-collapse: collapse;
-    border: 3px solid forestgreen;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-th{
-    padding: .5em;
-    border-bottom: 1px solid #d3d3d3;
-    height: 2rem;
-    text-align: left;
-    
+    font-size: 32pt;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 img{
@@ -56,4 +31,28 @@ img{
 
 .intro{
     text-align: center;
+}
+
+.button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+}
+
+.button:hover{
+    background-color: blue;
+    color: goldenrod;
+}
+
+img{
+    height: 300px;
+    width: 300px;
 }
