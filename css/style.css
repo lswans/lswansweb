@@ -1,0 +1,59 @@
+h1, h2, h3{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 3400;
+    color: white;
+}
+
+body{
+    color: white;
+    background-color: rgb(32, 153, 180);
+}
+
+h1{
+    font-size: 2em;
+}
+
+section.intro{
+    padding-left: 5rem;
+}
+
+section.about_us{
+    padding-left: 10rem;
+
+}
+
+table{
+    border-collapse: collapse;
+    border: 3px solid forestgreen;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th{
+    padding: .5em;
+    border-bottom: 1px solid #d3d3d3;
+    height: 2rem;
+    text-align: left;
+    
+}
+
+img{
+    max-width: 90px;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.navbar .card{
+    text-align: center;
+}
+
+.intro{
+    text-align: center;
+}
