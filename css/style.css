@@ -78,11 +78,14 @@ img{
     display: flex;
     flex: 0 1 30%;
     padding-left: 100px;
+    padding-right: 100px;
 
 }
 
 .about .about_text{
-    padding-left: 120px;
+    border: 1.5pt solid black;
+    margin-left: 120px;
+    padding-inline: 10px;
     width: 600px;
 }
 
