@@ -12,6 +12,15 @@ h1, h2, h3{
     color: white;
 }
 
+.header_line{
+    display: flex;
+}
+
+.nametag{
+    display: flex;
+    justify-content: center;
+}
+
 body{
     color: white;
     background-color: forestgreen;
@@ -22,15 +31,11 @@ h1{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-img{
-    max-width: 90px;
-}
-
 .navbar{
+
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    
+    justify-content: space-evenly;
 }
 
 .navbar .card{
