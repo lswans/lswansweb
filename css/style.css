@@ -23,7 +23,7 @@ h1, h2, h3{
 
 body{
     color: white;
-    background-color: forestgreen;
+    background-color: darkgreen;
     background-image: "img/linkedin_background.jpeg";
 }
 
@@ -33,7 +33,7 @@ h1{
 }
 
 .navbar{
-
+    padding-top: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -58,11 +58,12 @@ h1{
     display: inline-block;
     font-size: 16px;
     margin: 0;
-    cursor:crosshair;
+    cursor:pointer;
 }
 
 .button:hover{
-    background-color: blue;
+    background-color: rebeccapurple;
+    border: 1.5 solid goldenrod;
     color: goldenrod;
 }
 
@@ -82,7 +83,7 @@ h1{
 }
 
 .about{
-    padding-top: 50px;
+    padding-top: 10px;
     display: flex;
     flex: 0 1 30%;
     padding-left: 100px;
@@ -97,6 +98,7 @@ h1{
     padding-inline: 10px;
     width: 600px;
     border-radius: 8px;
+    background-color: #4CAF50;
 }
 
 .project_cards{
@@ -112,7 +114,7 @@ h1{
     background-color: #4CAF50;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
     max-width: 300px;
     padding-inline: 10px;
     padding: .5em;
