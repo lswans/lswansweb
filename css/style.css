@@ -12,7 +12,6 @@ header{
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    border: 4pt double black;
     padding-inline: 10px; 
 }
 h1, h2, h3{
