@@ -3,12 +3,21 @@
 }
 
 header{
-    display: block;
+    display: flex;
+    justify-content: center;
+    
 }
-
+.header{
+    max-width: 530px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    border: 4pt double black;
+    padding-inline: 10px; 
+}
 h1, h2, h3{
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
 }
 
@@ -20,7 +29,9 @@ h1, h2, h3{
     display: flex;
     justify-content: center;
 }
-
+.tagline{
+    font-size: 11pt;
+}
 body{
     color: white;
     background-color: rgb(0, 70, 0);
@@ -130,11 +141,12 @@ h1{
 }
 
 .card_button{
-    flex: 0 0 300px;
+    flex: 0 0 250px;
     border-radius: 16px;
     border: 1.5pt solid black;
-    background-color: #4CAF50;
+    background-color: rebeccapurple;
     color: white;
+    font-size: 10pt;
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -145,7 +157,7 @@ h1{
 }
 
 .card_button:hover{
-    background-color: rebeccapurple;
+    background-color: #4CAF50;
     border: 1.5pt solid goldenrod;
     
 }
