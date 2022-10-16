@@ -23,13 +23,15 @@ h1, h2, h3{
 
 body{
     color: white;
-    background-color: darkgreen;
+    background-color: rgb(0, 70, 0);
     background-image: "img/linkedin_background.jpeg";
 }
 
 h1{
     font-size: 32pt;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    color: goldenrod;
+    
 }
 
 .navbar{
@@ -111,7 +113,7 @@ h1{
     flex: 0 0 300px;
     border-radius: 16px;
     border: 1.5pt solid black;
-    background-color: #4CAF50;
+    background-color: rebeccapurple;
     display: flex;
     flex-direction: column;
     
@@ -124,7 +126,26 @@ h1{
 
 .project_card:hover{
     cursor: pointer;
+
+}
+
+.card_button{
+    flex: 0 0 300px;
+    border-radius: 16px;
+    border: 1.5pt solid black;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    max-width: 300px;
+    padding-inline: 10px;
+    padding: .5em;
+    margin: .5em;
+}
+
+.card_button:hover{
     background-color: rebeccapurple;
     border: 1.5pt solid goldenrod;
-
+    
 }
