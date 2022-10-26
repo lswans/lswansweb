@@ -26,10 +26,6 @@ h3{
     border-radius: 8px;
 }
 
-#projects{
-    color: darkslategray;
-}
-
 .navbar h1{
     background-color: rgba(47, 79, 79, 0.95);
     margin-left: 30%;
@@ -58,11 +54,8 @@ header{
 body{
     color: darkslategray;
     background-color: rgb(182, 210, 191);
-    background-image: "";
-    background-image: url("img/linkedin_background.jpeg");
     background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
+    background-size: 120% 120%;
 }
 
 
@@ -149,6 +142,8 @@ nav h1{
     padding-left: 100px;
     padding-right: 100px;
     border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 
 }
 
