@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en"></html>
+
 <head>
     <meta charset="UTF-8" >
     <meta name="author" content="">
     <title>Lucas J. Swanson</title>
-      
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    
 </head>
 
-<header>
-    <div class="header">
-        <h1 class="nametag">Lucas J. Swanson</h1>
-        <h3 class="tagline">Web Interface Developer at the UW Denolle Earthquake Lab</h3> 
-    </div>
-    
+<header>    
+    <nav class="navbar">
+        <div class="navbar_class">
+            <h1>Lucas J. Swanson</h1>
+        </div>
+        <div class="navbar_class">
+            <div class="navbutton"><a href="https://www.github.com/lswans">GitHub</a></div>
+            <div class="navbutton"><a href="https://www.linkedin.com/in/lucasjswanson">LinkedIn</a></div>
+            <div class="navbutton"><a href="https://lucasjswanson.weebly.com">Academic Portfolio</a></div>
+            
+        </div>    
+      </nav>
 </header>
 
 <body>
+    
     <!-- Self Image and About Me section -->
     <div class="about">
         <div>
             <img src="img/portrait_lswans.jpeg" alt="Lucas Swanson" class="center">
-            <div class="navbar">
-                <div class="card"><a href="https://www.github.com/lswans" class="button">GitHub</a></div>
-                <div class="card"><a href="https://www.linkedin.com/in/lucasjswanson" class="button">LinkedIn</a></div>
-                <div class="card"><a href="https://lucasjswanson.weebly.com" class="button">Academic Portfolio</a></div>
-        
-            </div>
         </div>
         
         <div class="about_text">
@@ -36,7 +39,7 @@
         </div>
     <!-- Begin Project Cards -->
     </div>
-    <h2>My Projects</h2>
+    <h2 id="projects">My Projects</h2>
     <div class="project_cards">
         <div class="project_card"><a href="https://www.github.com/lswans" class="card_button"><h3>Denolle Quake Lab; Web Interface with Earthquake Database</h3>
             <p>Currently building an online interface with the UW Department of Earth and Space Science's seismic data server to allow public access to 50TB+ of earthquake measurements. Writing scripts and designing website to visualize said data in a useful manner.</p>
