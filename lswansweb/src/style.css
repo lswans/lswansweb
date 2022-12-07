@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Heading styling*/
+h1, h2, h3{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: goldenrod;
+    margin: none;
+}
+
+h1{
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: goldenrod;
+    
+}
+
+h3{
+    color: goldenrod;
+}
+
+.about h1{
+    background-color: darkslategray;
+    border-radius: 8px;
+}
+
+#projects{
+    color: darkslategray;
+}
+
+.navbar h1{
+    background-color: rgba(47, 79, 79, 0.95);
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 16px;
+    margin-bottom: 10px;
+}
+
+/* Header */
+
+.header_line{
+    display: flex;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    position: fixed;
+    
+}
+
+/* Body */
+body{
+    color: darkslategray;
+    background-color: rgb(182, 210, 191);
+    background-image: url("./linkedin_background.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+
+/* Navbar */
+nav{
+    background-position-y: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    background-color: rgba(47, 79, 79, 1);
+    padding: 20px;
+    border: 1.5px solid black;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    width: 100%;
+    z-index: 2;
+
+}
+
+nav h1{
+    margin: 0.5rem;
+}
+
+.navbar .navbar_class{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.navbar .navbar_class .navbutton{
+    display: inline-block;
+    justify-content: center;
+    background-color: goldenrod;
+    border-radius: 16px;
+    padding: 10px;
+    text-decoration: none;
+    box-shadow: 0 3px rgba(0, 0, 0, .16), 0 3px rgba(0, 0, 0, .23);
+    margin-inline: .5rem;
+
+}
+
+.navbar .navbar_class .navbutton:hover{
+    background-color: darkgoldenrod;
+    cursor: pointer;
+}
+
+
+
+.navbar .navbutton a{
+    text-decoration: none;
+    color: black;
+}
+
+.intro{
+    text-align: center;
+}
+
+.center{
+    max-width: 350px;
+    height: auto;
+    border: 2px solid purple;
+    object-fit: cover;
+
+}
+
+/* About Section */
+.about a{
+    text-decoration: underline;
+    color: goldenrod;
+}
+
+.about img{
+    display: flex;
+    flex: 1 0 30%;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.about{
+    padding-top: 10rem;
+    display: flex;
+    flex: 0 1 30%;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 8px;
+    
+
+}
+
+.about .about_text{
+    border: 1.5pt solid black;
+    margin-left: 120px;
+    padding-inline: 10px;
+    width: 600px;
+    border-radius: 8px;
+    color: white;
+    background-color: darkslategray;
+}
+
+.project_cards{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.project_card{
+    flex: 0 0 300px;
+    border-radius: 16px;
+    border: 1.5pt solid black;
+    background-color: darkslategray;
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 300px;
+    padding-inline: 10px;
+    padding: .5em;
+    margin: .5em;
+    
+}
+
+.project_card:hover{
+    cursor: pointer;
+}
+
+.card_button{
+    flex: 0 0 250px;
+    border-radius: 16px;
+    border: 1.5pt solid black;
+    background-color: darkslategray;
+    color: white;
+    font-size: 10pt;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    max-width: 300px;
+    padding-inline: 10px;
+    padding: .5em;
+    margin: .5em;
+}
+
+.card_button:hover{
+    background-color: forestgreen;
+    border: 1.5pt solid goldenrod;
+    transition: all 0.1s ease-in-out;
+}
