@@ -38,6 +38,7 @@ export function CardPage(props){
     
     return(
     <div>
+        <h2 id="projects" data-aos="fade-up">My Projects</h2>
         <div className="mobileButtons">
             <BsFillArrowLeftSquareFill id="leftArrowMobile" onClick={handleLeftClick}/>
             <BsFillArrowRightSquareFill id="rightArrowMobile" onClick={handleLeftClick}/>

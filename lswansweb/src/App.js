@@ -9,6 +9,8 @@ import{Toolbox} from './toolbox';
 import AOS from 'aos';
 import Map from './Map'
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import {About} from './About';
+import {Nav} from './Nav';
 import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 // ..
 AOS.init();
@@ -50,46 +52,10 @@ function App() {
 
   return(
     <div>
-        <head>
-            <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        </head>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-            <nav className="navbar" id="navbar" data-aos="fade-down">
-                <div>
-                    <h1><strong>Lucas J. Swanson</strong></h1>
-                </div>
-                
-                <div className="navbar_class">
-                    
-                    <div className="navbutton"><a href="https://www.github.com/lswans">GitHub</a></div>
-                    <div className="navbutton"><a href="https://www.linkedin.com/in/lucasjswanson">LinkedIn</a></div>
-                    <div className="navbutton"><a href="https://lucasjswanson.weebly.com">Academic Portfolio</a></div>
-                    
-                </div>    
-            </nav>
-
-        <body>
-            <div className="about">
-                <div data-aos="fade-right">
-                    <img src={portrait_lswans} style={{ width: 300, height: 300}} alt="me"/>
-                    <h4>Student Satellite Data Engineer @ Starfish Space</h4>
-                </div>
-                
-                <div className="about_text" data-aos="fade-left" data-aos-duration = {1000}>
-                    <h2>About Me</h2>
-                    <p>I am a senior at the University of Washington, graduating with a <strong>B.S Earth and Space Sciences and Informatics</strong> in the Spring of 2023. At <a href="https://www.starfishspace.com/">Starfish Space</a>, I am working with a team of five total graduating seniors to develop a visualization tool for satellite flight metrics (velocity, attitude, battery usage, etc.).</p>
-                    <p>Upon graduation, I am interested in working with satellite imagery to observe natural phenomena, measuring useful data and packaging that data for consumer use. Applications that come to mind include satellite imagery for earth observation, cell network development, aerospace data engineering, etc.</p>
-                </div>
-            </div>
-            <h2 id="projects" data-aos="fade-up">My Projects</h2>
-            <CardPage group1={group1} group2={group2} group3={group3}/>
-            <Toolbox/>
-            <div className="viewDiv">
-                <Map/>
-            </div>
-            
-        </body>
-
+        <Nav/>
+        <About/>
+        <CardPage group1={group1} group2={group2} group3={group3}/>
+        <Toolbox/>
         <footer>
             Designed and produced entirely by <strong>&copy; Lucas Swanson, 2022</strong>
         </footer>
