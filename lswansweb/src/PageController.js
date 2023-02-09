@@ -4,6 +4,7 @@ import {CardPage} from './CardPage';
 import clarityApiScreenshot from "./clarityapi-screenshot.png";
 import vesperScreenshot from "./project-vesper-logo.png";
 import posterScreenshot from "./poster-screenshot.png";
+import anemoneScreenshot from './anemone-screenshot.png'
 import { FeatureCard } from './FeatureCard';
 import { AcademicPortfolio } from './AcademicPortfolio';
 import {Toolbox} from './toolbox'
@@ -15,10 +16,11 @@ export function PageController(){
             "skills":"Javascript React GitHub ArcGIS",
             "card":(
                 <div className="project_card" data-aos="fade-up">
-                    <a href="https://www.github.com/lswans" className="card_button"><h3>Denolle Quake Lab; Web Interface for Earthquake Data</h3>
-                            <p>Currently building an online interface with the UW Department of Earth and Space Science's seismic data server to allow public access to 50TB+ of earthquake measurements.</p>
+                    <a href="https://github.com/Project-Anemone/starfish-space-capstone" className="card_button"><h3>Starfish Space: Data Viz Tool for Satellite Data Analysis</h3>
+                            <p>Currently building an interface for Starfish Space to analyze satellite telemetry and flight metrics using JavaScript (React.js, Plotly.js). Using Azure Cosmos to create a PostgreSQL backend structure to serve the app. I personally initiated the project, developed the Page Of Plots, and assisted in Figma designs and user interviews.</p>
                             
                         </a>
+                        <img className="cardImage" src={anemoneScreenshot}/>
                 </div>
             ),
             "id":0
