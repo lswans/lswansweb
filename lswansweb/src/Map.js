@@ -17,8 +17,8 @@ function Map(){
             })
             view= new MapView({
                 map:webmap,
-                center:[-118.805, 34.027],
-                zoom:0,
+                center:[-121.55266, 47.48323],
+                zoom:11,
                 //use the ref as a container
                 container:MapEl.current
             })
@@ -31,7 +31,7 @@ function Map(){
         }
     })
     return(
-            <div>
+            <div aos="fade-up">
                 <h1 style={{alignSelf:"center"}}>My Map</h1>
                 <div style={{height:400, width:600, paddingInline: 300}} ref={MapEl}>
                     <div>
