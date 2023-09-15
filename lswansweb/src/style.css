@@ -22,20 +22,21 @@ h3{
 }
 
 .about h1{
-    background-color: darkslategray;
+    background-color: goldenrod;
     border-radius: 8px;
 }
 
+h4{
+    color: goldenrod;
+}
+
 #projects{
-    color: darkslategray;
+    color: #daa520;
 }
 
 .navbar h1{
-    background-color: rgba(47, 79, 79, 0.95);
-    margin-left: 30%;
-    margin-right: 30%;
-    border-radius: 16px;
-    margin-bottom: 10px;
+    background-color: #2f4f4ff2;
+    
 }
 
 /* Header */
@@ -58,7 +59,8 @@ header{
 body{
     color: darkslategray;
     background-color: rgb(182, 210, 191);
-    background-image: url("./linkedin_background.jpeg");
+    background-image: url("./nebula-background.jpg");
+    /*background-color: rgb(59, 1, 87);*/
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -71,10 +73,10 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    position: fixed;
+    
     flex-direction: column;
     background-color: rgba(47, 79, 79, 1);
-    padding: 20px;
+    padding: 10px;
     border: 1.5px solid black;
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 100%;
@@ -89,8 +91,6 @@ nav h1{
 
 .navbar .navbar_class{
     display: inline-block;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 .navbar .navbar_class .navbutton{
@@ -98,11 +98,16 @@ nav h1{
     justify-content: center;
     background-color: goldenrod;
     border-radius: 16px;
-    padding: 10px;
+    padding-inline: 20px;
     text-decoration: none;
-    box-shadow: 0 3px rgba(0, 0, 0, .16), 0 3px rgba(0, 0, 0, .23);
+    box-shadow: 0 4px rgba(0, 0, 0, .16), 0 4px rgba(0, 0, 0, .23);
     margin-inline: .5rem;
+    max-height: 20px;
 
+}
+.navbar .navbar_class .navbutton a{
+    font-size: 12px;
+    
 }
 
 .navbar .navbar_class .navbutton:hover{
@@ -140,10 +145,11 @@ nav h1{
     flex: 1 0 30%;
     height: 10rem;
     border-radius: 50%;
+    border: solid 2px darkslategray;
 }
 
 .about{
-    padding-top: 10rem;
+    padding-top: 10px;
     display: flex;
     flex: 0 1 30%;
     padding-left: 100px;
@@ -171,21 +177,17 @@ nav h1{
 
 .project_card{
     flex: 0 0 300px;
+    height: 500px;
     border-radius: 16px;
     border: 1.5pt solid black;
     background-color: darkslategray;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    
-    max-width: 300px;
     padding-inline: 10px;
     padding: .5em;
     margin: .5em;
     
-}
-
-.project_card:hover{
-    cursor: pointer;
 }
 
 .card_button{
@@ -205,7 +207,232 @@ nav h1{
 }
 
 .card_button:hover{
-    background-color: forestgreen;
-    border: 1.5pt solid goldenrod;
+    background-color: green;
+    border: 1.5pt solid darkgoldenrod;
     transition: all 0.1s ease-in-out;
+}
+
+.cardImage{
+    max-width: 250px;
+    max-height: 217px;
+    width: 250px;
+    height: 217px;
+    border-radius: 16px;
+}
+
+footer{
+    color: goldenrod;
+    width:100%;
+    bottom:0px;
+}
+
+#projectCardContainer{
+    display:flex;
+}
+
+.ArrowLeft{
+    width: 100px;
+    height: 30px;
+    background-color: darkslategray;
+    border: solid 3px goldenrod;
+    margin-top: 100px;
+    margin-left:  200px;
+    color: goldenrod;
+    cursor: pointer;
+
+}
+.ArrowRight{
+    width: 100px;
+    height: 30px;
+    background-color: darkslategray;
+    border: solid 3px goldenrod;
+    margin-top: 100px;
+    margin-right: 200px;
+    color: goldenrod;
+    cursor:pointer;
+
+}
+#leftArrowDesktop{
+    width: 70px;
+    height: 70px;
+    margin-top: 150px;
+    margin-left: 100px;
+    cursor: pointer;
+    
+}
+#leftArrowDesktop:hover{
+    color: green;
+    border: solid 1px darkgoldenrod;
+    border-radius: 9.5px;
+}
+#rightArrowDesktop{
+    width: 70px;
+    height: 70px;
+    margin-top: 150px;
+    margin-right: 100px;
+    cursor: pointer;
+}
+#rightArrowDesktop:hover{
+    color: green;
+    border: solid 1pt darkgoldenrod;
+    border-radius: 9.5px;
+}
+
+
+
+#leftArrowMobile{
+    width: 70px;
+    height: 70px;
+    margin-top: 150px;
+    margin-left: 100px;
+    cursor: pointer;
+    display: none;
+}
+#leftArrowMobile:hover{
+    color: green;
+    border: solid 1px darkgoldenrod;
+    border-radius: 9.5px;
+}
+#rightArrowMobile{
+    width: 70px;
+    height: 70px;
+    margin-top: 150px;
+    margin-right: 100px;
+    cursor: pointer;
+    display: none;
+}
+#rightArrowMobile:hover{
+    color: green;
+    border: solid 1pt darkgoldenrod;
+    border-radius: 9.5px;
+}
+#portfolio_img{
+    max-width: 600;
+    max-height: 390px;
+    width: 600px;
+    height: 390px;
+    border-radius: 16px;
+}
+#featureCard{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.center_image{
+    align-items: center;
+    align-content:center;
+    justify-content: center;
+    
+}
+
+@media(max-width: 808px){
+    .card_button p{
+        font-size: 9px;
+    }
+    .cardImage{
+        display: none;
+    }
+    .project_card{
+        width: 200px;
+        height: 300px;
+    }
+    h1{
+        font-size: 14px;
+    }
+    .about{
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .project_cards{
+        flex-direction: column;
+        align-items: center;
+        top: 30px;
+        
+    }
+    .mobileButtons{
+        display: block;
+    }
+    #leftArrowMobile{
+        display:flex;
+        left:0px;
+    }
+    #rightArrowMobile{
+        display: flex;
+        right: 0px;
+    }
+    #leftArrowDesktop{
+        display: none;
+        
+    }
+    #rightArrowDesktop{
+        display: none;
+        
+    }
+    .toolkit{
+        margin-inline: 30px;
+        margin-bottom: 40px;
+    }
+    .about{
+        padding-top: 5rem;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about_text{
+        max-width: 300px !important;
+        margin: auto;
+
+    }
+    #projects_container{
+        top: 30px;
+    }
+}
+
+.toolkit{
+    margin-inline: 60px;
+    margin-bottom: 50px;
+}
+
+.toolkit_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutButtons{
+    justify-content: center;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.linkHeaderCouple{
+    display: flex;
+    justify-content: space-around;
+}
+.navLink{
+    padding-top: 10px;
+    float: left;
+}
+.navHeader{
+    padding-right: 60px;
+}
+.toolbox_text{
+    border: 1.5pt solid black;
+    padding-inline: 10px;
+    width: 600px;
+    border-radius: 8px;
+    color: white;
+    background-color: darkslategray;
+}
+.toolbox_text_container{
+    justify-content: center;
+    display: flex;
+    padding-block: 15px;
+    
+
 }

@@ -16,8 +16,8 @@ export function PageController(){
             "skills":"Javascript React GitHub ArcGIS",
             "card":(
                 <div className="project_card" data-aos="fade-up">
-                    <a href="https://github.com/Project-Anemone/starfish-space-capstone" className="card_button"><h3>Starfish Space: Data Viz Tool for Satellite Data Analysis</h3>
-                            <p>Currently building an interface for Starfish Space to analyze satellite telemetry and flight metrics using JavaScript (React.js, Plotly.js). Using Azure Cosmos to create a PostgreSQL backend structure to serve the app. I personally initiated the project, developed the Page Of Plots, and assisted in Figma designs and user interviews.</p>
+                    <a href="https://github.com/Project-Anemone" className="card_button"><h3>Starfish Space: Data Viz Tool for Satellite Data Analysis</h3>
+                            <p>Building an interface for Starfish Space to analyze satellite telemetry and flight metrics using JavaScript (React.js, Plotly.js). Using Azure Cosmos to create a PostgreSQL backend structure. So far I have personally initiated the project, developed the Page Of Plots, and assisted with Figma designs and user interviews.</p>
                             
                         </a>
                         <img className="cardImage" src={anemoneScreenshot}/>
@@ -29,8 +29,8 @@ export function PageController(){
     let clarityAPICard = {
         "skills":"JavaScript, JSX, React, GitHub",
         "card":(
-            <div className="project_card" data-aos="fade-up"><a href="https://www.github.com/lswans" className="card_button"><h3>ClarityAPI: Air Quality Web App</h3>
-                <p>An air quality visualisation app that provides health recommendations based on your area's air quality readings.</p></a>
+            <div className="project_card" data-aos="fade-up"><a href="https://clarityapi-6a71a.web.app/" className="card_button"><h3>ClarityAPI: Air Quality Web App</h3>
+                <p>An air quality visualisation app that provides health recommendations based on your area's air quality readings. I personally implemented the search elements (searchbars + drop-downs) as well as the page that displays city cards, and assisted with styling for entire app.</p></a>
                 <img className="cardImage" src={clarityApiScreenshot}/> 
             </div>
         ),

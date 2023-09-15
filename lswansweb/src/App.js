@@ -11,7 +11,7 @@ import Map from './Map'
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import {About} from './About';
 import {Nav} from './Nav';
-import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
 // ..
 AOS.init();
 
@@ -52,10 +52,18 @@ function App() {
 
   return(
     <div>
+        <div>
+        
+        <BrowserRouter>
         <Nav/>
-        <About/>
-        <CardPage group1={group1} group2={group2} group3={group3}/>
-        <Toolbox/>
+            <Routes>
+                <Route path="" element={<About/>}/>
+                <Route path="cardpage" element={<CardPage group1={group1} group2={group2} group3={group3}/>}/>
+                <Route path="toolbox" element={<Toolbox/>}/>
+            </Routes>
+        </BrowserRouter>
+        </div>
+
         <footer>
             Designed and produced entirely by <strong>&copy; Lucas Swanson, 2022</strong>
         </footer>

@@ -1,6 +1,8 @@
 import { React, useState } from 'react';
 import {BsFillArrowLeftSquareFill, BsFillArrowRightSquareFill} from 'react-icons/bs';
 import {SearchBar} from "./SearchBar";
+import { Link } from 'react-router-dom';
+import Button from '@mui/material/Button';
 
 export function CardPage(props){
     const [inputValue, setInputValue] = useState('')//initialize as empty string
@@ -37,7 +39,7 @@ export function CardPage(props){
     }
     
     return(
-    <div>
+    <div id="projects_container">
         <h2 id="projects" data-aos="fade-up">My Projects</h2>
         <div className="mobileButtons">
             <BsFillArrowLeftSquareFill id="leftArrowMobile" onClick={handleLeftClick}/>
@@ -49,7 +51,6 @@ export function CardPage(props){
             {currentCardGroup[1].card}
             <BsFillArrowRightSquareFill id="rightArrowDesktop" onClick={handleRightClick}/>
         </div>
-        
     </div>
     )
 }
