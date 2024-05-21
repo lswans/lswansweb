@@ -78,6 +78,16 @@ export function PageController(){
         ),
         "id":5
     }
+    let castleGenCard = {
+        "skills":"React, Node.js, Express.js, full-stack development",
+        "card":(
+            <div className="project_card" data-aos="fade-up">
+                <a href="https://github.com/lswans/castlegen" className="card_button"><h3>ESS 401: Geology Field Camp w/ ArcGIS</h3>
+                <p>A six-week full-time course focused on building relevant career skills for aspiring geologists including GIS, field skills and documentation.</p></a>
+            </div>
+        ),
+        "id":6
+    }
     //filter projects to return
     let allCards = [quakeLabCard, clarityAPICard, vesperCard, lspaceCard, spaceGrantCard, fieldCampCard];
     let displayedCards = allCards.map(cardobj =>{

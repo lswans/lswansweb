@@ -49,8 +49,6 @@ header{
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
     position: fixed;
     
 }
@@ -64,6 +62,7 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+    width: 100%;
 }
 
 
@@ -146,17 +145,26 @@ nav h1{
     height: 10rem;
     border-radius: 50%;
     border: solid 2px darkslategray;
+
 }
 
 .about{
     padding-top: 10px;
-    display: flex;
     flex: 0 1 30%;
     padding-left: 100px;
     padding-right: 100px;
     border-radius: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    
     
 
+}
+.about .about_image{
+    flex: 1 1 1%;
+    padding-right: 1em;
 }
 
 .about .about_text{
@@ -167,6 +175,8 @@ nav h1{
     border-radius: 8px;
     color: white;
     background-color: darkslategray;
+    flex: 1 1 1%;
+    padding-left: 1em;
 }
 
 .project_cards{
@@ -436,3 +446,47 @@ footer{
     
 
 }
+@media screen and (max-width: 600px) {
+    .about{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0%;
+
+    }
+    .about .about_text{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border: 1.5pt solid black;
+        
+        width: 600px;
+        border-radius: 8px;
+        color: white;
+        background-color: darkslategray;
+    }
+    .about img{
+        display: flex;
+        flex: 1 0 30%;
+        height: 10rem;
+        border-radius: 50%;
+        border: solid 2px darkslategray;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .aboutButtons{
+        justify-content: center;
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        size: 50%;
+    }
+    #leftArrowDesktop{
+        display: none;
+        
+    }
+  }

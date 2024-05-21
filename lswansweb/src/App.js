@@ -65,7 +65,7 @@ function App() {
         </div>
 
         <footer>
-            Designed and produced entirely by <strong>&copy; Lucas Swanson, 2022</strong>
+            Designed and produced entirely by <strong>&copy; Lucas Swanson, 2022</strong>. Updated 2024.
         </footer>
 
     </div>

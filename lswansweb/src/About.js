@@ -21,7 +21,7 @@ export function About(){
     return(
     <div>
         <div className="about">
-            <div data-aos="fade-right">
+            <div className="about_image" data-aos="fade-right">
                 <img src={portrait_lswans} style={{ width: 300, height: 300}} alt="me"/>
                 <h4>Student Satellite Data Engineer @ Starfish Space</h4>
             </div>
