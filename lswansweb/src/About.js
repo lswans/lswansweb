@@ -22,13 +22,13 @@ export function About(){
     <div>
         <div className="about">
             <div className="about_image" data-aos="fade-right">
-                <img src={portrait_lswans} style={{ width: 300, height: 300}} alt="me"/>
-                <h4>Student Satellite Data Engineer @ Starfish Space</h4>
+                <img className="portrait-main" src={portrait_lswans} style={{ width: 300, height: 300}} alt="me"/>
+                <h4>Satellite Manufacturing Analyst @ Accenture</h4>
             </div>
             
             <div className="about_text" data-aos="fade-left" data-aos-duration = {1000}>
                 <h2>About Me</h2>
-                <p>I am a University of Washington graduate with Bachelor of Science (B.S.) degrees in <strong>Earth and Space Sciences and Informatics</strong>. At <a href="https://www.starfishspace.com/">Starfish Space</a>, I worked with engineers, data scientists and other students to develop a visualization tool for satellite flight metrics (velocity, attitude, battery usage, etc.).</p>
+                <p>I am a University of Washington graduate with Bachelor of Science (B.S.) degrees in <strong>Earth and Space Sciences and Informatics</strong>. At <a href="https://www.accenture.com/us-en">Accenture</a>, I provide MES administration support to satellite manufacturing engineers, conduct user acceptance testing for new software features, and triage bug fixes.  </p>
                 <p>I am seeking professional opportunities in Software Development, particularly in Earth Observation and Data Visualization. I specialize in frontend development, data viz, and product design and have foundational knowledge in climate science, satellite systems and software development methodologies. Outside of the office I'm a mountain climber (Mount Rainier Summit 2022), a line dancer, a musician and a board game enthusiast.</p>
             </div>
             

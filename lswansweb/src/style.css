@@ -147,6 +147,10 @@ nav h1{
     border: solid 2px darkslategray;
 
 }
+.portrait_main{
+    width: 5%;
+    height: 5%;
+}
 
 .about{
     padding-top: 10px;
@@ -187,7 +191,7 @@ nav h1{
 
 .project_card{
     flex: 0 0 300px;
-    height: 500px;
+    height: 70%;
     border-radius: 16px;
     border: 1.5pt solid black;
     background-color: darkslategray;
@@ -293,7 +297,7 @@ footer{
 #leftArrowMobile{
     width: 70px;
     height: 70px;
-    margin-top: 150px;
+    margin-top: 50%;
     margin-left: 100px;
     cursor: pointer;
     display: none;
@@ -306,7 +310,7 @@ footer{
 #rightArrowMobile{
     width: 70px;
     height: 70px;
-    margin-top: 150px;
+    margin-top: 50%;
     margin-right: 100px;
     cursor: pointer;
     display: none;
@@ -323,11 +327,7 @@ footer{
     height: 390px;
     border-radius: 16px;
 }
-#featureCard{
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-}
+
 .center_image{
     align-items: center;
     align-content:center;
@@ -336,15 +336,19 @@ footer{
 }
 
 @media(max-width: 808px){
+    .card_button h3 {
+        font-size: 11px;
+    }
     .card_button p{
-        font-size: 9px;
+        font-size: 6px;
     }
     .cardImage{
         display: none;
     }
     .project_card{
-        width: 200px;
-        height: 300px;
+        width: 70%;
+        height: 10%;
+        
     }
     h1{
         font-size: 14px;
@@ -356,18 +360,20 @@ footer{
     .project_cards{
         flex-direction: column;
         align-items: center;
-        top: 30px;
+        
         
     }
     .mobileButtons{
         display: block;
     }
     #leftArrowMobile{
-        display:flex;
+        float: left;
+        display:inline-table;
         left:0px;
     }
     #rightArrowMobile{
-        display: flex;
+        display: inline-table;
+        float: right;
         right: 0px;
     }
     #leftArrowDesktop{
@@ -387,13 +393,14 @@ footer{
         border-radius: 8px;
         align-items: center;
         justify-content: center;
-        display: flex;
         flex-direction: column;
     }
 
     .about_text{
         max-width: 300px !important;
-        margin: auto;
+        margin: 0 auto;
+        float: left;
+
 
     }
     #projects_container{
